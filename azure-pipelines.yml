@@ -1,4 +1,11 @@
 # Node.js
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Free Trial(b13c76ad-ccd9-4d3e-81b9-7f909b94ba26)'
+    appType: 'webApp'
+    appName: 'manish164'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
